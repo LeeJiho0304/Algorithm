@@ -15,7 +15,6 @@ for i in range(min_num, target):
 else:
     print(0)
 
-
 # 통과는 되지만 시간이 오래걸림.
 # 30840 KB,	2896 ms
 '''
