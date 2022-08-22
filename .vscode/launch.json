@@ -5,12 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "Java.HelloWorld",
+            "projectName": "Algorithm_8494d1b9"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["<", "input.txt", ">", "output.txt"]
+            "args": [
+                "<",
+                "input.txt",
+                ">",
+                "output.txt"
+            ]
         }
     ]
 }
