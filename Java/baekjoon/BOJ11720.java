@@ -1,4 +1,4 @@
-package Java.backjoon;
+package Java.baekjoon;
 
 import java.util.Scanner;
 public class BOJ11720 {
