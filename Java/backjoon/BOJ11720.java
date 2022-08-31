@@ -35,4 +35,3 @@ public class BOJ11720 {
     }
 
 }
-
