@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class P12903 {
     /*
+     * https://school.programmers.co.kr/learn/courses/30/lessons/12903
      * Level 1. 가운데 글자 가져오기
      * 단어 s의 길이가 짝수면 가운데 두글자를 반환
      */
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] str = sc.nextLine().split("");
