@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch P42576",
+            "request": "launch",
+            "mainClass": "Java.programmers.P42576",
+            "projectName": "Algorithm_905ad9e0"
+        },
+        {
+            "type": "java",
+            "name": "Launch P12931",
+            "request": "launch",
+            "mainClass": "Java.programmers.P12931",
+            "projectName": "Algorithm_905ad9e0"
+        },
+        {
+            "type": "java",
             "name": "Launch P77484",
             "request": "launch",
             "mainClass": "Java.programmers.P77484",
