@@ -27,8 +27,8 @@ public class P42576 {
         
         // for(int i = 0; i < completion.length; i++) {
         //     for(int j = 0; j < participant.length; j++) {
-        //         if(!completion[i].equals(participant[j]))
-        //             answer = participant[j];
+        //         if(!completion[i].equals(participant[i]))
+        //             answer = participant[i];
         //     }
         // } 
         return answer;
