@@ -4,40 +4,25 @@ import java.util.Arrays;
 public class P42576 {
     public static String solution(String[] participant, String[] completion) {
         /*
-         * 
+         * https://school.programmers.co.kr/learn/courses/30/lessons/42576
+         * Level 1. 완주하지 못한 선수
          */
-        String answer = "";
+
+        Arrays.sort(participant);
+        Arrays.sort(completion);
         
-        for(int i = 0; i < completion.length; i++) {
-            for(int j = 0; j < participant.length; j++) {
-                if(participant[j]!=null && participant[j].equals(completion[i])) {
-                    participant[j] = null;
-                    completion[i] = null;
-                }
+        int i;
+        for(i = 0; i < completion.length; i++) {
+            if(!completion[i].equals(participant[i])) {
+                return participant[i];
             }
         } 
-        for(int i = 0; i < participant.length; i++) {
-            if(participant[i] != null) {
-                answer = participant[i];
-            }
-        }
-
-        // Arrays.sort(participant);
-        // Arrays.sort(completion);
-        
-        // for(int i = 0; i < completion.length; i++) {
-        //     for(int j = 0; j < participant.length; j++) {
-        //         if(!completion[i].equals(participant[i]))
-        //             answer = participant[i];
-        //     }
-        // } 
-        return answer;
+        return participant[i];
     }
 
     public static void main(String[] args) {
         String[] participant = {"mislav", "stanko", "mislav", "ana"};
         String[] completion = {"stanko", "ana", "mislav"};
         System.out.println(solution(participant, completion));
-        // System.out.println(null.equals("hi"));
     }
 }

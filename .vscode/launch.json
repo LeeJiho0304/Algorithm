@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch P42862",
+            "request": "launch",
+            "mainClass": "Java.programmers.P42862",
+            "projectName": "Algorithm_905ad9e0"
+        },
+        {
+            "type": "java",
             "name": "Launch codingTest",
             "request": "launch",
             "mainClass": "Java.baekjoon.codingTest",
