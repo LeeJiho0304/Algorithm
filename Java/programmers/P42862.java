@@ -9,45 +9,39 @@ public class P42862 {
      * Level 1. 체육복
      */
 
-    // public static int solution(int n, int[] lost, int[] reserve) {
-    //     int answer = n - lost.length; // 수업 들을 수 있는 학생 수
-    //     int[] lostCheck = new int[lost.length];
-    //     Arrays.sort(lost);
-    //     Arrays.sort(reserve);
-    //     int cnt = 0;
-    //     for(int i = 0; i < reserve.length; i++) {
-    //         for(int j = 0; j < lost.length; j++) {
-    //             if(answer > n) break;
-    //             else if(reserve[i]-1 == lost[j] || reserve[i]+1 == lost[j]) {
-    //                 lostCheck[cnt++] = lost[j];
-    //                 for(int k = 0; k < cnt; k++) {
-    //                     if(lostCheck[k] == lost[j]) break;
-    //                     else answer++;
-    //                 }
-                    
-    //             }
+    public static int solution(int n, int[] lost, int[] reserve) {
+        
+        int count = 0; 
+        //여벌 체육복을 가져온 학생이 도난 당했을 경우
+        for (int i = 0; i < lost.length; i++) { 
+            for (int j = 0; j < reserve.length; j++) { 
+                if (lost[i] == reserve[j]) { 
+                    lost[i] = reserve[j] = -1; 
+                    count++; 
+                    break; 
+                } 
+            } 
+        } 
 
-    //         }
-    //     }
-
-    //     // int r = reserve.length;
-    //     // int l = lost.length;
-    //     // int a = 0;
-    //     // if(r -l >=0){
-    //     //     a = n;
-    //     // }
-    //     // else if(lost.length>reserve.length){
-    //     //     a = n-(lost.length-reserve.length); 
-    //     // }
-    //     return answer;
-    // }
+        for (int k : lost) { 
+            for (int j = 0; j < reserve.length; j++) { 
+                if (k == reserve[j] - 1 || k == reserve[j] + 1) { 
+                    reserve[j] = -1; 
+                    count++; 
+                    break; 
+                } 
+            } 
+        } 
+            
+        return n - lost.length + count; 
+    }
 
 
     // 학생수 n만큼 int student[n] = {1};로 초기화 선언 answer = n;
     // 그중 lost를 돌며 해당 index에 -1 reserver는 +1
     // 값이 0일때, 좌우로 값이 2가 없는 경우는 answer-- 빌려준 학생 옷 -1
 
-    public static int solution(int n, int[] lost, int[] reserve) {
+    public static int solution1(int n, int[] lost, int[] reserve) {
         int answer = n;
         int []student = new int[n];
         
