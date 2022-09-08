@@ -3,7 +3,7 @@ package Java.programmers;
 public class P12931 {
     /*
      * https://school.programmers.co.kr/learn/courses/30/lessons/12931
-     * 자릿수 더하기
+     * Level 1. 자릿수 더하기
      */
 
     public static int solution(int n) {
