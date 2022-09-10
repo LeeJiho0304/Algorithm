@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BOJ11720",
+            "request": "launch",
+            "mainClass": "Java.Backjoon.BOJ11720",
+            "projectName": "Algorithm_8494d1b9"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HelloWorld",
             "request": "launch",
             "mainClass": "Java.HelloWorld",
