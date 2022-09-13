@@ -1,9 +1,5 @@
 package Java.baekjoon;
 
-<<<<<<< HEAD
-public class BOJ11659 {
-    
-=======
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -33,5 +29,4 @@ public class BOJ11659 {
             System.out.println(S[j] - S[i-1]);
         }
     }
->>>>>>> c9d014203fc6ccad8eeeed58c3d2f208a1c2f0ed
 }
