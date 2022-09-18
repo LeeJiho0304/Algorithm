@@ -23,7 +23,7 @@ public class BOJ2018 {
                 end_index++;
                 sum = sum + end_index;
             }
-            System.out.println(count);
         }
+        System.out.println(count);
     }
 }
