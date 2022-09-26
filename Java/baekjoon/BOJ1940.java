@@ -37,5 +37,6 @@ public class BOJ1940 {
 
         System.out.println(count);
         bf.close();
+        
     }
 }
