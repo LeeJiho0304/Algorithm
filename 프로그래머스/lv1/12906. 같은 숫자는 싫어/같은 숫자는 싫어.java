@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Solution {
     public int[] solution(int []arr) {
+        
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         for(int i = 0; i < arr.length-1; i++){
@@ -17,3 +18,4 @@ public class Solution {
         return answer;
     }
 }
+
