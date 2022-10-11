@@ -5,9 +5,9 @@ class Solution {
         
         char[] arr = s.toLowerCase().toCharArray();
         
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == 'p') pCnt++;
-            if(arr[i] == 'y') yCnt++;
+        for(char c : arr) {
+            if(c == 'p') pCnt++;
+            if(c == 'y') yCnt++;
         }
 
         return pCnt == yCnt? true : false;
